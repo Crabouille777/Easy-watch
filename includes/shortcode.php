@@ -55,10 +55,7 @@ remove_filter('the_content', 'wp_filter_content_tags');
     }
     }
 ob_start();
-?>
-<script>console.log("✅ EasyWatch shortcode chargé");</script>
-
-<?php if (!empty($playlist)): ?>
+ if (!empty($playlist)): ?>
 
 <div class="easywatch-wrapper" style="display: flex; max-width: 1000px; margin: auto; gap: 20px; flex-wrap: nowrap;">
 
