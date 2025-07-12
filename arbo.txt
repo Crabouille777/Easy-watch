@@ -1,0 +1,28 @@
+easy-watch/
+│
+├── easy-watch.php                 ← Fichier principal du plugin
+├── uninstall.php                  ← Suppression propre des options si nécessaire
+│
+├── admin/
+│   ├── admin-ui.php               ← Interface HTML du back-office
+│   ├── admin.js                   ← JS spécifique à l’admin (AJAX, slide, etc.)
+│   ├── admin-style.css            ← CSS admin
+│   ├── shortcode-manager.php      ← Gestion des shortcodes et playlist
+│   └── ajax-handler.php           ← Traitement des requêtes AJAX admin
+│
+├── includes/
+│   ├── functions.php              ← Fonctions utilitaires (ex: validation URL vidéo)
+│   ├── post-type.php              ← (facultatif) si playlist personnalisée
+│   └── shortcode.php              ← Génération du frontend (player + playlist)
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css              ← Style frontend du player + playlist
+│   └── js/
+│       ├── player.js              ← Comportement JS côté frontend (lecture, clic playlist)
+│       └── sortable.min.js        ← (optionnel) pour le glisser-déposer
+│
+└── data/
+    └── playlists/                 ← Fichiers ou JSON par shortcode
+        └── 123abc.json            ← Exemple de playlist sauvegardée
+

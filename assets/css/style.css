@@ -1,0 +1,75 @@
+/* === Easy-watch Admin UI === */
+.easywatch-block {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.easywatch-shortcode {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.easywatch-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.easywatch-buttons button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #2271b1;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.easywatch-buttons button:hover {
+    background-color: #1b5d91;
+}
+
+.easywatch-edit-form {
+    margin-top: 15px;
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #2271b1;
+}
+
+.easywatch-edit-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.easywatch-edit-form input,
+.easywatch-edit-form textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.easywatch-edit-form button[type="submit"] {
+    margin-top: 10px;
+    background-color: #28a745;
+}
+
+.easywatch-edit-form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.easywatch-edit-form button.cancel-edit {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+.easywatch-edit-form button.cancel-edit:hover {
+    background-color: #c82333;
+}

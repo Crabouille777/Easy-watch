@@ -1,0 +1,68 @@
+/* assets/css/player.css */
+
+/* Wrapper général du player */
+.easywatch-wrapper {
+  max-width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+/* Player iframe en 16:9 responsive */
+.easywatch-player {
+  position: relative;
+  width: 70%;
+  padding-bottom: 39.375%; /* 70% de 56.25% pour 16:9 */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 6px;
+}
+
+.easywatch-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Playlist à droite, scrollable */
+.easywatch-playlist {
+  width: 28%;
+  max-height: 395px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.easywatch-playlist h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5em;
+}
+
+.easywatch-playlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.easywatch-playlist li {
+  margin-bottom: 10px;
+}
+
+.easywatch-playlist a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.easywatch-playlist a:hover {
+  text-decoration: underline;
+}
