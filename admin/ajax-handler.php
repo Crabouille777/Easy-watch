@@ -1,7 +1,5 @@
 <?php
-// admin/ajax-handler.php
 
-// Sécurité : bloquer accès direct
 if (!defined('ABSPATH')) {
     exit;
 }
