@@ -46,7 +46,7 @@ if (scrollTopBtn) {
         const query = this.value.toLowerCase();
         const items = playlist.querySelectorAll('.easywatch-playlist-item');
 
-        let firstMatch = null; // 🔍 on mémorise la première correspondance
+        let firstMatch = null;
 
         items.forEach(function(item) {
             const text = item.textContent.toLowerCase();
@@ -54,14 +54,13 @@ if (scrollTopBtn) {
             if (query && text.includes(query)) {
                 item.classList.add('highlighted');
                 if (!firstMatch) {
-                    firstMatch = item; // 💾 première correspondance trouvée
+                    firstMatch = item;
                 }
             } else {
                 item.classList.remove('highlighted');
             }
         });
 
-        // 🟡 On fait défiler vers la première correspondance trouvée
         if (firstMatch) {
             firstMatch.scrollIntoView({
                 behavior: 'smooth',
